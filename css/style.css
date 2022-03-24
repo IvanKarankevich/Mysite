@@ -247,7 +247,7 @@ img {
   display: flex;
 }
 .story__picture {
-  height: 225px;
+  min-height: 225px;
   min-width: 140px;
   margin: 0 5% 0 0;
   font-family: "Open Sans";
@@ -259,13 +259,13 @@ img {
   padding: 20px;
 }
 .story__picture__plan {
-  background: url("../../img/story/plan.png") no-repeat;
+  background: url("../img/story/plan.png") no-repeat;
 }
 .story__picture__manage {
-  background: url("../../img/story/manage.png") no-repeat;
+  background: url("../img/story/manage.png") no-repeat;
 }
 .story__picture__build {
-  background: url("../../img/story/build.png") no-repeat;
+  background: url("../img/story/build.png") no-repeat;
 }
 
 .cap {
@@ -345,14 +345,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 150px;
   height: 40px;
+  padding: 0 29px;
+  white-space: nowrap;
   background-color: #00A4E5;
 }
 
@@ -373,7 +375,7 @@ img {
 }
 
 .get {
-  background: url("../../img/get/bg.png") 0/cover no-repeat;
+  background: url("../img/get/bg.png") 0/cover no-repeat;
   min-height: 500px;
 }
 .get__body {
@@ -437,7 +439,7 @@ img {
   letter-spacing: 0.07px;
   font-family: "Open Sans";
   min-width: 250px;
-  min-height: 39px;
+  max-height: 40px;
   border: 1px solid #979797;
   padding: 10px 15px;
 }
